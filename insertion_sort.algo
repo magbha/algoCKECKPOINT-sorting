@@ -1,0 +1,15 @@
+PROCEDURE sort(VAR numberes : ARRAY_OF INTEGER[];)
+
+VAR
+    temp : INTEGER := numberes[i];
+    j : INTEGER :=  i - 1;
+BEGIN
+    FOR i FROM 1 TO numberes.lenght-1 DO 
+        
+        WHILE (j >= 0 AND numberes[j] > temp) DO
+        numberes[j] := numberes[j + 1] ;
+        j := j -1 
+        END_WHILE
+        temp  := numberes[j + 1]
+    END_FOR
+END
